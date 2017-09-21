@@ -1,0 +1,87 @@
+\documentclass{exam}
+    \usepackage{ModeloIFBA}
+    %\usepackage[alf]{abntex2cite}
+    
+    \renewcommand{\curso}{Tecnologia em Análise e Desenvolvimento de Sistemas}
+    \renewcommand{\materia}{Programação Orientada a Objetos}
+    \renewcommand{\turma}{EI41}
+    \renewcommand{\professor}{Leandro Costa Souza}
+    \renewcommand{\avaliacao}{Prova Recuperação Unidade I}
+    \renewcommand{\dataavaliacao}{22/09/2017}
+    
+    
+    \newcommand{\duracao}{1h 40min}
+    
+    %\printanswers
+    
+    \begin{document}
+    
+        \input{orientacoes}
+    
+        \begin{center}
+            \gradetable[h][questions]
+        \end{center}
+    
+        Serão avaliadas as aplicações dos conceitos de encapsulamento e uma correta modelagem considerando os conceitos de orientação à objeto.
+        O código das questões são complementares.
+        \begin{questions}
+            \question[10] Construa as classes necessárias para um sistema de biblioteca que pode armazenar informações de itens emprestáveis. Esses itens podem ser \textit{livros} (título, autor e ISBN), \textit{apostilas} (título e autor) e midias \textit{audiovisuais} (título, autor e tipo de mídia(DVD, CD ...)).  A identificação dos livros deve ser por ISBN dos outros idem deve ser a junção de título e autor.
+            \fillwithlines{\stretch{1}}
+
+            \newpage
+            \question[75]Considere o seguinte algoritmo: 
+            \lstinputlisting[language=portugol]{code/calculo.alg}
+            \begin{solutionorlines}[\stretch{1}]
+                Resposta da questao q so ira aparecer quanto o parametro de printanswers for liberado
+            \end{solutionorlines}	
+
+            \question[25] Uma palavra de Fibonacci é definida pela função f(n) descrita abaixo. Esta sequência inicia com as seguintes palavras: b, a, ab, aba, abaab, abaababa, abaababaabaab, ... Faça uma função recursiva que receba um número N e retorne a N-ésima palavra de Fibonacci. 
+            $$
+             f(n)=\begin{cases}
+                0, & \text{se $n=0$}\\
+                1, & \text{se $n=1$}\\
+                f(n-1) + f(n-2) , & \text{se $n>1$}
+              \end{cases}
+            $$
+            Aqui $+$ denota a concatenação de duas strings
+            
+            %\fillwithlines{\stretch{1}}	
+            \begin{solutionorlines}[\stretch{1}]
+                resposta aqui	
+            \end{solutionorlines}
+            
+            \newpage		
+            \question[10] Selecione a opção que mostre quais são os conectivos lógicos que devem ser colocados nas expressões a seguir para que TODAS sejam verdadeiras. Considere A=2, B=3, C=6 e D=10.
+            
+            \begin{parts}
+            \part (A+C < D-A) \_ (D-A = A+C)
+            \part (B*A = C) \_ ((D div A) < C)
+            \part ((D mod A) = (C mod B)) \_ ((B mod A) <> (C mod A))
+            \part ((C div A) = B) \_ (B*C <= D+A*B)
+            \part (((D div A)+B) > C+A) \_ ((D mod C) >= (A*A))
+            \end{parts}
+        
+            \begin{choices}
+                \choice ou – e – xou – ou – xou
+                \choice ou – xou – ou – xou – e
+                \choice e – e – ou – xou – ou
+                \CorrectChoice xou – e – ou – xou – ou
+                \choice ou – xou – e – xou – ou
+            \end{choices}
+
+
+            \newpage		
+            \begin{center}
+             \textbf{Rscunho}
+            \end{center}	
+            \fillwithlines{\stretch{1}}
+            \newpage
+            \fillwithlines{\stretch{1}}
+    
+        \end{questions}
+    
+        %\bibliography{biblio}
+    
+    \end{document}
+    
+    

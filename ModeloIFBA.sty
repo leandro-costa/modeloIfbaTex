@@ -113,24 +113,24 @@
 			
 			\tikzstyle{n1} = [rectangle, rounded corners, minimum width=3cm, minimum height=3cm,text centered, draw=black, fill=olive!80,opacity=#1, blur shadow = {opacity=#1,shadow xshift=2ex,shadow yshift=-2ex}]
 			\tikzstyle{n2} = [ellipse, minimum width=3cm, minimum height=3cm, text centered, draw=black, fill=red!80,opacity=#1, blur shadow = {opacity=#1,shadow xshift=2ex,shadow yshift=-2ex}]
-
+            % letra I
 			\node (i0) [n2] {};
-			\node (i1) [n1, right=of i0] {};
-			\node (i2) [n1, right=of i1] {};
-			
-			\node (i3) [n1, below=of i0] {};
-			\node (i4) [n1, right=of i3] {};
+			\node (i1) [n1, below=of i0] {};
+			\node (i2) [n1, below=of i1] {};
+            \node (i3) [n1, below=of i2] {};
+            
+            % letra F
+            \node (f0) [n1, right=of i0] {};
+			\node (f1) [n1, below=of f0] {};
+			\node (f2) [n1, below=of f1] {};
+            \node (f3) [n1, below=of f2] {};
 
-			\node (i5) [n1, below=of i3] {};
-			\node (i6) [n1, right=of i5] {};
-			\node (i7) [n1, right=of i6] {};
-
-			\node (i8) [n1, below=of i5] {};
-			\node (i9) [n1, right=of i8] {};
+            \node (f4) [n1, right=of f0] {};
+            \node (f5) [n1, right=of f2] {};
+            
+			\node (tx) [right=of f5,text width=30cm,font=\fontsize{60}{60}\selectfont] { \textbf{INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA  E TECNOLOGIA DA BAHIA}};
 			
-			\node (tx) [right=of i7,text width=30cm,font=\fontsize{60}{60}\selectfont] { \textbf{INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA  E TECNOLOGIA DA BAHIA}};
-			
-			\node (c) [right=of i9,minimum width=3cm]{};
+			\node (c) [right=of f3,minimum width=3cm]{};
 			\node (tx2) [right=of c,text width=30cm,font=\fontsize{50}{50}\selectfont,color=olive] {\textbf{Campus Eunápolis}};
 		\end{tikzpicture}
 	}
@@ -164,7 +164,7 @@
 \usepackage{xcolor}
 \lstset{
     language=Java, % Troque para PHP, C, Java, etc... bash é o padrão
-    basicstyle=\ttfamily\footnotesize,
+    basicstyle=\ttfamily\small,
     numberstyle=\footnotesize,
     numbers=left,
     backgroundcolor=\color{gray!10},
@@ -172,7 +172,7 @@
     tabsize=2,
     rulecolor=\color{black!30},
     keywordstyle=\color{blue},
-    showstringspaces=false,
+    showstringspaces=false,  
     %title=\lstname,
     escapeinside={\%*}{*)},
     breaklines=true,
